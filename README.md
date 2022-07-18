@@ -7,7 +7,7 @@
 - A simple function was made to ask the user for an input for the 1st Milestone. The function would then call the check_letter() function to check if the letter guessed is in the word.
   
 ```python
-"""    def ask_letter(self):
+   def ask_letter(self):
           
         while True and self.num_lives > 0:
             letter = input(f'Enter a single character: ').lower()
@@ -23,7 +23,7 @@
         else:
             print(f'Please enter a character')
             print(letter)                                                                      
-        pass"""
+        pass
 ```
 
 ## Milestone 2
@@ -31,7 +31,7 @@
 - In Milestone 2, the conecpt of Object Oriented Programming (OOP) was used to define the attributes for the game. The predefined attributes for the game were number of lives and the word list.
 
 ```python
-"""    def __init__(self, word_list, num_lives=5):
+    def __init__(self, word_list, num_lives=5):
 
         self.word = random.choice(word_list)
         self.word_guessed = ['_'] * len(self.word)
@@ -42,7 +42,7 @@
         print(f'The mystery word has {len(self.word)} characters')
         print(self.word_guessed)
 
-        pass"""
+        pass
 ```
 
 ## Milestone 3
@@ -51,7 +51,7 @@
 
 - This function is called by the ask_letter function
 ```python
-"""    def check_letter(self, letter) -> None:
+    def check_letter(self, letter) -> None:
                        
         if letter in self.word:
             for index, char in enumerate(self.word):
@@ -68,12 +68,12 @@
             print(hangman_hanged[self.num_lives])
             print(self.list_letters)
             print(f'Looks like you have {self.num_lives} left')
-        pass"""
+        pass
 ```
 ## Milestone 4
 - In the final milestone, all of the logic was tied together. The play_game function was created to iteratively ask the user for a letter until the user guessed the word or runs out of lives. 
 ```python
-"""def play_game(word_list):
+def play_game(word_list):
     
     game = Hangman(word_list, num_lives=5)
 
@@ -87,7 +87,7 @@
         elif game.num_lives == 0:
             print(f'You ran out of lives. The word was {game.word}')
             break
-    pass"""
+    pass
 ```
 - To add the finihsing touch, I added the iconic hangman diagram that would show when the user had guessed an incorrect letter.
 
