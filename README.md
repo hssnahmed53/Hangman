@@ -93,4 +93,4 @@ def play_game(word_list):
 
 ## Conclusions
 
-- The was my 1st Python project, I learnt how attributes are defined and the basics of OOP.
+- This was my 1st Python project, I learnt how attributes are defined and the basics of OOP.
